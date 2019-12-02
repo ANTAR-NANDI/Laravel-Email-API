@@ -18,5 +18,6 @@ use Illuminate\Http\Request;
 // });
 Route::prefix('v1')->group(function () {
    Route::resource('orders','api\OrderController');
+   Route::get('divisions','api\ApiController@divisions');
 });
-
+ //Route::get('divisions','api\ApiController@divisions');
